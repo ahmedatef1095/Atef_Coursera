@@ -9,32 +9,109 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Definitions Functions and macros required for assignment 1
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * 
+ * @author Ahmed Atef
+ * @date 9/2/2022
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Prints the statistics of a given array
  *
- * <Add Extended Description Here>
+ * This function takes the resulting statistics done on an array
+ * which are: minimum, maximum, mean and median, and print those
+ * values on the screen
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param minimum The minimum number of the given array
+ * @param maximum The maximum number of the given array
+ * @param mean The mean of the given array
+ * @param median The median of the given array
  *
- * @return <Add Return Informaiton here>
+ * @return void
  */
+void print_statistics (unsigned char minimum, unsigned char maximum, float mean, unsigned char median);
+
+
+/**
+ * @brief Prints the contents of a given array
+ *
+ * This function takes the given array and prints it to the
+ * screen.
+ *
+ * @param array The first element of the array to be printed on the screen
+ *
+ * @return void
+ */
+void print_array (unsigned char *array, unsigned int counter);
+
+
+/**
+ * @brief Finds the median of the given array
+ *
+ * This function takes the given array and finds
+ * its median.
+ *
+ * @param array The first element of the array to be processed
+ * @param
+ *
+ * @return median The median value of the given array.
+ */
+unsigned char find_median (unsigned char *array, unsigned int counter);
+
+/**
+ * @brief Finds the mean of the given array
+ *
+ * This function takes the given array and finds
+ * its mean.
+ *
+ * @param array The first element of the array to be processed
+ *
+ * @return mean The mean value of the given array.
+ */
+float find_mean (unsigned char *array, unsigned int counter);
+
+/**
+ * @brief Finds the maximum of the given array
+ *
+ * This function takes the given array and finds
+ * its maximum.
+ *
+ * @param array The first element of the array to be processed
+ *
+ * @return maximum The maximum value of the given array.
+ */
+unsigned char find_maximum (unsigned char *array, unsigned int counter);
+
+/**
+ * @brief Finds the minimum of the given array
+ *
+ * This function takes the given array and finds
+ * its minimum.
+ *
+ * @param array The first element of the array to be processed
+ *
+ * @return minimum The minimum value of the given array.
+ */
+unsigned char find_minimum (unsigned char *array, unsigned int counter);
+
+/**
+ * @brief Sorts the given array from the largest to smallest
+ *
+ * This function takes the given array and its length, sorts
+ * the array from the largest to smallest using bubble sort and returns the
+ * sorted array.
+ *
+ * @param array The first element of the array to be processed
+ *
+ * @return median The median value of the given array.
+ */
+void sort_array (unsigned char *array, unsigned int counter);
 
 
 #endif /* __STATS_H__ */
